@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/mg"
+  to = "/"
+  force = false
