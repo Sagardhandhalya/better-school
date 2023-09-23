@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+@page {
+  size: auto;
+  margin: 5cm 1cm 0cm 1cm;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
