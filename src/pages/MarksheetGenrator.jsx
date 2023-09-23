@@ -9,7 +9,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 function MarksheetGenrator() {
     const [data, setData] = useState([]);
     const [totalData, setTotalData] = useState(null);
-    const [sheetNames, setSheetNames] = useState([1]);
+    const [sheetNames, setSheetNames] = useState([]);
     const [currentSheet, setCurrentSheet] = useState('');
 
     const [month, setMonth] = useState(new Date().getMonth() + 1);
@@ -98,7 +98,7 @@ function MarksheetGenrator() {
                 !!sheetNames.length && <>
                     <div className='flex items-center justify-center border-2 border-green-100 mt-8 rounded-xl p-4 no-print'>
                         <h1 className="text-xl mr-8">Loading data of </h1>
-                        <select value={currentSheet} onChange={updateDropDown}>
+                        <select className='border-solid border-2 rounded-md w-48 border-gray-500 px-3 py-1' value={currentSheet} onChange={updateDropDown}>
                             {sheetNames.map((name) => (
                                 <option>{name}</option>
                             ))}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
     const [password, setPassword] = useState("")
@@ -11,6 +11,12 @@ const LoginPage = () => {
             navigate("/mg")
         }
     }
+
+    const user = localStorage.getItem("user")
+
+    if (user) return <Navigate to="/mg" replace={true} />
+
+
     return (
         <div className='flex flex-col justify-center align-middle items-center'>
             <img

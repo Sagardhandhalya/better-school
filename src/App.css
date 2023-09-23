@@ -13,7 +13,7 @@ td {
 
 @page {
   size: auto;
-  margin: 5cm 1cm 0cm 1cm;
+  margin: 5cm 0cm 0cm 0cm;
 }
 
 @media print {

@@ -20,11 +20,19 @@ const MarkSheet = ({ data, monthArr, year, month, subjects, totalMarks, std }) =
     return (
         <table style={{ pageBreakBefore: "always", width: "100%" }} className='mt-8' >
             <tbody>
-                <tr>
-                    <td height="40" colspan="2" rowspan="1">
+                <tr className='h-32'>
+                    <td colspan="4" rowspan="1">
+                        <div className='flex justify-center w-100 h-100'>
+                            <img className='w-32 h-32' src="https://e0.pxfuel.com/wallpapers/168/994/desktop-wallpaper-downloa-swami-vivekananda-quotes-swami-vivekananda.jpg" />
+                        </div>
                     </td>
-                    <td colspan="14" rowspan="1">
-                        Shree Vivekanand Education Institute
+                    <td colspan="6" rowspan="1">
+                        <span className='font-bold'>શ્રી વિવેકાનંદ એજ્યુકેશન ઇન્સ્ટિટ્યૂટ એન્ડ કમ્પયુટર ક્લાસીસ - દેવલી</span>
+                    </td>
+                    <td colspan="6" rowspan="1" >
+                        <div className='flex justify-center w-100 h-100'>
+                            <img className='w-32 h-32' src="https://e0.pxfuel.com/wallpapers/168/994/desktop-wallpaper-downloa-swami-vivekananda-quotes-swami-vivekananda.jpg" />
+                        </div>
                     </td>
                 </tr>
                 <tr >
